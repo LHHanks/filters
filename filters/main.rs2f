@@ -5302,7 +5302,7 @@ type: number
 label: Value
 group: Low tier
 */
-#define VAR_VALUE_T0_VALUE 20000
+#define VAR_VALUE_T0_VALUE 10000
 
 /*@ define:input:item_values
 type: style
