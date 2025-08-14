@@ -2,7 +2,7 @@
 hidden: true
 name: header
 */
-meta { name = "lavish"; description = "based off of riktenx/filterscape" }
+meta { name = "lavish"; description = "based off of riktenx/filterscape"; }
 
 
 
