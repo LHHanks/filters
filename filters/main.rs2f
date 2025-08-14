@@ -1,3 +1,8 @@
+meta {
+  name = "lavish";
+  description: "filter for llew and avish"
+}
+
 // module:cox
 
 #define CONST_COX_AREA []
@@ -320,10 +325,6 @@ if (name:CONST_HERB_HERBS) {}
 // endmodule:herb
 
 // module:value
-
-meta {
-  name = "main";
-}
 
 #define LIB_BROWN       "#d2b287"
 #define LIB_LIGHT_BROWN "#af6025"
