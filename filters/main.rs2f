@@ -4938,14 +4938,14 @@ type: stringlist
 label: Items
 group: Tier S
 */
-#define VAR_UNIQUE_STIER ["Infernal cape","Fire cape","Dizana's quiver*","Unsired","Ancient blood ornament kit","Ultor vestige","Venator vestige","Bellator vestige","Magus vestige","Executioner's axe head","Leviathan's lure","Siren's staff","Eye of the duke","Slepey tablet","*max cape","*mutagen","*champion scroll"]
+#define VAR_UNIQUE_STIER ["Infernal cape","Fire cape","Dizana's quiver*","Unsired","Ancient blood ornament kit","Ultor vestige","Venator vestige","Bellator vestige","Magus vestige","Executioner's axe head","Leviathan's lure","Siren's staff","Eye of the duke","*mutagen","*champion scroll"]
 
 /*@ define:input:uniques
 type: stringlist
 label: Items
 group: Tier A
 */
-#define VAR_UNIQUE_ATIER ["Mokhaiotl cloth","Jar of *","Noxious pommel","Noxious point","Noxious blade","strangled tablet","scarred tablet","sirenic tablet","frozen tablet"]
+#define VAR_UNIQUE_ATIER ["Mokhaiotl cloth","Jar of *","Noxious pommel","Noxious point","Noxious blade","strangled tablet","scarred tablet","sirenic tablet","frozen tablet","Slepey tablet"]
 
 /*@ define:input:uniques
 type: stringlist
@@ -4964,10 +4964,18 @@ group: Tier C
 /*@ define:input:uniques
 type: style
 label: Style
+group: Skill Capes
+exampleItem: Max Cape
+*/
+#define VAR_UNIQUE_SKILLCAPE ["*max cape","* cape","* cape(t)"]
+
+/*@ define:input:uniques
+type: style
+label: Style
 group: Tier S
 exampleItem: Executioner's axe head
 */
-#define VAR_UNIQUE_STIER_CUSTOMSTYLE hidden = false;textColor = "#ff0000";backgroundColor = "#ffffff";borderColor = "#ff0000";lootbeamColor = "#ff0000";textAccent = 4;textAccentColor = "#ff000000";;showLootbeam = true;sound = "t0.wav";
+#define VAR_UNIQUE_STIER_CUSTOMSTYLE hidden = false;textColor = "#ff0000";backgroundColor = "#ffffff";borderColor = "#ff0000";lootbeamColor = "#ff0000";textAccent = 4;textAccentColor = "#ff000000";showLootbeam = true;sound = "t0.wav";
 
 /*@ define:input:uniques
 type: style
@@ -4993,12 +5001,21 @@ exampleItem: Dark totem top
 */
 #define VAR_UNIQUE_CTIER_CUSTOMSTYLE hidden = false;textColor = "#af6025";backgroundColor = "#350d0d";borderColor = "#af6025";textAccent = 3;
 
+/*@ define:input:uniques
+type: style
+label: Style
+group: Skill Capes
+exampleItem: Max Cape
+*/
+#define VAR_UNIQUE_SKILLCAPE_CUSTOMSTYLE hidden = false;textColor = "#ff00ff";textAccent = 4;
+
 rule (name:VAR_UNIQUE_STIER) { VAR_UNIQUE_STIER_CUSTOMSTYLE }
 rule (name:VAR_UNIQUE_ATIER) { VAR_UNIQUE_ATIER_CUSTOMSTYLE }
 rule (name:VAR_UNIQUE_BTIER) { VAR_UNIQUE_BTIER_CUSTOMSTYLE }
 rule (name:VAR_UNIQUE_CTIER) { VAR_UNIQUE_CTIER_CUSTOMSTYLE }
 
 rule (name:"* half of key" && tradeable:false) {VAR_UNIQUE_BTIER_CUSTOMSTYLE}
+rule (name:VAR_UNIQUE_SKILLCAPE && tradeable:false) {VAR_UNIQUE_SKILLCAPE_CUSTOMSTYLE}
 
 
 /*@ define:module:potions
