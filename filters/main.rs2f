@@ -4967,7 +4967,7 @@ label: Style
 group: Tier S
 exampleItem: Executioner's axe head
 */
-#define VAR_UNIQUE_STIER_CUSTOMSTYLE hidden = false;textColor = "#ff0000";backgroundColor = "#ffffff";borderColor = "#ff0000";lootbeamColor = "#ff0000";fontType = 3;showLootbeam = true;sound = "t0.wav";
+#define VAR_UNIQUE_STIER_CUSTOMSTYLE hidden = false;textColor = "#ff0000";backgroundColor = "#ffffff";borderColor = "#ff0000";lootbeamColor = "#ff0000";textAccent = 4;textAccentColor = "#ff000000";;showLootbeam = true;sound = "t0.wav";
 
 /*@ define:input:uniques
 type: style
@@ -5308,7 +5308,7 @@ label: Style
 group: '++Insane tier'
 exampleItem: Torva platebody (damaged)
 */
-#define VAR_VALUE_T5_CUSTOMSTYLE hidden = false;textColor = "#ff0000";backgroundColor = "#ffffff";borderColor = "#ff0000";lootbeamColor = "#ff0000";textAccent = 3;showLootbeam = true;showValue = true;sound = "t0.wav";
+#define VAR_VALUE_T5_CUSTOMSTYLE hidden = false;textColor = "#ff0000";backgroundColor = "#ffffff";borderColor = "#ff0000";lootbeamColor = "#ff0000";textAccent = 4;showLootbeam = true;textAccentColor = "#ff000000";showValue = true;sound = "t0.wav";
 
 /*@ define:input:item_values
 type: style
@@ -5316,7 +5316,7 @@ label: Style
 group: '+Insane tier'
 exampleItem: Zaryte vambraces
 */
-#define VAR_VALUE_T4_CUSTOMSTYLE hidden = false;textColor = "#ffffff";backgroundColor = "#80ff0000";borderColor = "#ffffff";lootbeamColor = "#80ff0000";showLootbeam = true;showValue = true;sound = "t0.wav";
+#define VAR_VALUE_T4_CUSTOMSTYLE hidden = false;textColor = "#ffffff";backgroundColor = "#80ff0000";borderColor = "#ffffff";lootbeamColor = "#80ff0000";showLootbeam = true;showValue = true;textAccent = 4;textAccentColor = "#ff000000";sound = "t0.wav";
 
 /*@ define:input:item_values
 type: style
@@ -5324,7 +5324,7 @@ label: Style
 group: Insane tier
 exampleItem: Bandos tassets
 */
-#define VAR_VALUE_T3_CUSTOMSTYLE hidden = false;textColor = "#ff66b2";backgroundColor = "#ffffffff";borderColor = "#ff66b2";textAccentColor = "#ff000000";lootbeamColor = "#ff66b2";textAccent = 1;showLootbeam = true;showValue = true;sound = "t0.wav";
+#define VAR_VALUE_T3_CUSTOMSTYLE hidden = false;textColor = "#ff66b2";backgroundColor = "#ffffffff";borderColor = "#ff66b2";textAccentColor = "#ff000000";lootbeamColor = "#ff66b2";textAccent = 4;showLootbeam = true;showValue = true;sound = "t0.wav";
 
 /*@ define:input:item_values
 type: style
