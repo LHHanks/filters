@@ -4967,7 +4967,7 @@ label: Style
 group: Skill Capes
 exampleItem: Max Cape
 */
-#define VAR_UNIQUE_SKILLCAPE ["*max cape","* cape","* cape(t)"]
+#define VAR_UNIQUE_SKILLCAPE ["* cape","* cape(t)"]
 
 /*@ define:input:uniques
 type: style
