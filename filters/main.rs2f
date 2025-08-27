@@ -4980,6 +4980,14 @@ exampleItem: Fremennik Sea boots
 /*@ define:input:uniques
 type: style
 label: Style
+group: Teleports Untradable
+exampleItem: Camulet
+*/
+#define VAR_UNIQUE_TELEPORT ["Camulet", "Enchanted Lyre*","Skull sceptre*","*quetzal whistle"]
+
+/*@ define:input:uniques
+type: style
+label: Style
 group: Tier S
 exampleItem: Executioner's axe head
 */
@@ -5025,6 +5033,14 @@ exampleItem: Fremennik Sea boots
 */
 #define VAR_UNIQUE_DIARY_CUSTOMSTYLE hidden = false;textColor = "#ffffff";textAccent = 4;
 
+/*@ define:input:uniques
+type: style
+label: Style
+group: Teleports Untradable
+exampleItem: Camulet
+*/
+#define VAR_UNIQUE_TELEPORT_CUSTOMSTYLE hidden = false;textColor = "#ffffff";textAccent = 4;
+
 rule (name:VAR_UNIQUE_STIER) { VAR_UNIQUE_STIER_CUSTOMSTYLE }
 rule (name:VAR_UNIQUE_ATIER) { VAR_UNIQUE_ATIER_CUSTOMSTYLE }
 rule (name:VAR_UNIQUE_BTIER) { VAR_UNIQUE_BTIER_CUSTOMSTYLE }
@@ -5033,6 +5049,7 @@ rule (name:VAR_UNIQUE_CTIER) { VAR_UNIQUE_CTIER_CUSTOMSTYLE }
 rule (name:"* half of key" && tradeable:false) {VAR_UNIQUE_BTIER_CUSTOMSTYLE}
 rule (name:VAR_UNIQUE_SKILLCAPE && tradeable:false) {VAR_UNIQUE_SKILLCAPE_CUSTOMSTYLE}
 rule (name:VAR_UNIQUE_DIARY) {VAR_UNIQUE_DIARY_CUSTOMSTYLE}
+rule (name:VAR_UNIQUE_TELEPORT) {VAR_UNIQUE_TELEPORT_CUSTOMSTYLE}
 
 
 /*@ define:module:potions
