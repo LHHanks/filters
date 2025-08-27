@@ -4945,14 +4945,14 @@ type: stringlist
 label: Items
 group: Tier A
 */
-#define VAR_UNIQUE_ATIER ["Mokhaiotl cloth","Larran's key","Brimstone key","Jar of *","Noxious pommel","Noxious point","Noxious blade","* half of key (moon key)"]
+#define VAR_UNIQUE_ATIER ["Mokhaiotl cloth","Jar of *","Noxious pommel","Noxious point","Noxious blade","strangled tablet","scarred tablet","sirenic tablet","frozen tablet"]
 
 /*@ define:input:uniques
 type: stringlist
 label: Items
 group: Tier B
 */
-#define VAR_UNIQUE_BTIER ["dark totem","mossy key","giant key","ecumenical key","abyssal head","araxyte head","alchemical hydra heads","kbd heads","kq head*","dark claw","bludgeon claw","bludgeon spine","bludgeon axon","hydra's eye","hydra's fang","hydra's heart","strangled tablet","scarred tablet","sirenic tablet","frozen tablet","scurrius' spine","vorkath's head"]
+#define VAR_UNIQUE_BTIER ["dark totem","mossy key","giant key","ecumenical key","abyssal head","araxyte head","alchemical hydra heads","kbd heads","kq head*","dark claw","bludgeon claw","bludgeon spine","bludgeon axon","hydra's eye","hydra's fang","hydra's heart","scurrius' spine","Larran's key","Brimstone key"]
 
 /*@ define:input:uniques
 type: stringlist
@@ -4967,7 +4967,7 @@ label: Style
 group: Tier S
 exampleItem: Executioner's axe head
 */
-#define VAR_UNIQUE_STIER_CUSTOMSTYLE hidden = false;textColor = "#ff0000";backgroundColor = "#ffffff";borderColor = "#ff0000";lootbeamColor = "#ff0000";fontType = 3;showLootbeam = true;
+#define VAR_UNIQUE_STIER_CUSTOMSTYLE hidden = false;textColor = "#ff0000";backgroundColor = "#ffffff";borderColor = "#ff0000";lootbeamColor = "#ff0000";fontType = 3;showLootbeam = true;sound = "t0.wav";
 
 /*@ define:input:uniques
 type: style
@@ -4975,7 +4975,7 @@ label: Style
 group: Tier A
 exampleItem: Brimstone key
 */
-#define VAR_UNIQUE_ATIER_CUSTOMSTYLE hidden = false;textColor = "#ffffff";backgroundColor = "#af6025";borderColor = "#ffffff";textAccent = 3;showLootbeam = true;
+#define VAR_UNIQUE_ATIER_CUSTOMSTYLE hidden = false;textColor = "#ffffff";backgroundColor = "#af6025";borderColor = "#ffffff";textAccent = 3;showLootbeam = true;sound = "t1.wav";
 
 /*@ define:input:uniques
 type: style
@@ -4983,7 +4983,7 @@ label: Style
 group: Tier B
 exampleItem: Araxyte head
 */
-#define VAR_UNIQUE_BTIER_CUSTOMSTYLE hidden = false;textColor = "#000000";backgroundColor = "#af6025";borderColor = "#000000";textAccent = 3;
+#define VAR_UNIQUE_BTIER_CUSTOMSTYLE hidden = false;textColor = "#000000";backgroundColor = "#af6025";borderColor = "#000000";textAccent = 3;menuTextColor = "#EB8717";sound = "t2.wav";
 
 /*@ define:input:uniques
 type: style
@@ -4998,9 +4998,7 @@ rule (name:VAR_UNIQUE_ATIER) { VAR_UNIQUE_ATIER_CUSTOMSTYLE }
 rule (name:VAR_UNIQUE_BTIER) { VAR_UNIQUE_BTIER_CUSTOMSTYLE }
 rule (name:VAR_UNIQUE_CTIER) { VAR_UNIQUE_CTIER_CUSTOMSTYLE }
 
-
-
-
+rule (name:"* half of key" && tradeable:false) {VAR_UNIQUE_BTIER_CUSTOMSTYLE}
 
 
 /*@ define:module:potions
@@ -5088,37 +5086,37 @@ description: |
 type: style
 label: Beginner clue
 */
-#define VAR_CLUE_BEGINNER_CUSTOMSTYLE hidden = false;textColor = "#ffffff";backgroundColor = "#beb287";borderColor = "#ffffff";showLootbeam = true;
+#define VAR_CLUE_BEGINNER_CUSTOMSTYLE hidden = false;textColor = "#ffffff";backgroundColor = "#beb287";borderColor = "#ffffff";lootbeamColor = "#beb287";showLootbeam = true;sound = "clue.wav";
 
 /*@ define:input:clues
 type: style
 label: Easy clue
 */
-#define VAR_CLUE_EASY_CUSTOMSTYLE hidden = false;textColor = "#09600d";backgroundColor = "#beb287";borderColor = "#09600d";showLootbeam = true;
+#define VAR_CLUE_EASY_CUSTOMSTYLE hidden = false;textColor = "#ffffffff";backgroundColor = "#09600d";borderColor = "#ffffffff";lootbeamColor = "#09600d";showLootbeam = true;sound = "clue.wav";
 
 /*@ define:input:clues
 type: style
 label: Medium clue
 */
-#define VAR_CLUE_MEDIUM_CUSTOMSTYLE hidden = false;textColor = "#569699";backgroundColor = "#beb287";borderColor = "#569699";showLootbeam = true;
+#define VAR_CLUE_MEDIUM_CUSTOMSTYLE hidden = false;textColor = "#ffffffff";backgroundColor = "#569699";borderColor = "#ffffffff";lootbeamColor = "#569699";showLootbeam = true;sound = "clue.wav";
 
 /*@ define:input:clues
 type: style
 label: Hard clue
 */
-#define VAR_CLUE_HARD_CUSTOMSTYLE hidden = false;textColor = "#833798";backgroundColor = "#beb287";borderColor = "#833798";showLootbeam = true;
+#define VAR_CLUE_HARD_CUSTOMSTYLE hidden = false;textColor = "#ffffffff";backgroundColor = "#833798";borderColor = "#ffffffff";lootbeamColor = "#833798";showLootbeam = true;sound = "clue.wav";
 
 /*@ define:input:clues
 type: style
 label: Elite clue
 */
-#define VAR_CLUE_ELITE_CUSTOMSTYLE hidden = false;textColor = "#bda518";backgroundColor = "#beb287";borderColor = "#bda518";showLootbeam = true;
+#define VAR_CLUE_ELITE_CUSTOMSTYLE hidden = false;textColor = "#ffffffff";backgroundColor = "#bda518";borderColor = "#ffffffff";lootbeamColor = "#bda518";showLootbeam = true;sound = "clue.wav";
 
 /*@ define:input:clues
 type: style
 label: Master clue
 */
-#define VAR_CLUE_MASTER_CUSTOMSTYLE hidden = false;textColor = "#9b3026";backgroundColor = "#beb287";borderColor = "#9b3026";showLootbeam = true;
+#define VAR_CLUE_MASTER_CUSTOMSTYLE hidden = false;textColor = "#ffffffff";backgroundColor = "#9b3026";borderColor = "#ffffffff";lootbeamColor = "#9b3026";showLootbeam = true;sound = "clue.wav";
 
 
 rule (name:["scroll box (beginner)", "clue scroll (beginner)", "reward casket (beginner)", "challenge scroll (beginner)"]) {
@@ -5302,7 +5300,7 @@ type: number
 label: Value
 group: Low tier
 */
-#define VAR_VALUE_T0_VALUE 10000
+#define VAR_VALUE_T0_VALUE 20000
 
 /*@ define:input:item_values
 type: style
@@ -5310,7 +5308,7 @@ label: Style
 group: '++Insane tier'
 exampleItem: Torva platebody (damaged)
 */
-#define VAR_VALUE_T5_CUSTOMSTYLE hidden = false;textColor = "#ff0000";backgroundColor = "#ffffff";borderColor = "#ff0000";lootbeamColor = "#ff0000";textAccent = 3;showLootbeam = true;showValue = true;sound = 0;
+#define VAR_VALUE_T5_CUSTOMSTYLE hidden = false;textColor = "#ff0000";backgroundColor = "#ffffff";borderColor = "#ff0000";lootbeamColor = "#ff0000";textAccent = 3;showLootbeam = true;showValue = true;sound = "t0.wav";
 
 /*@ define:input:item_values
 type: style
@@ -5318,7 +5316,7 @@ label: Style
 group: '+Insane tier'
 exampleItem: Zaryte vambraces
 */
-#define VAR_VALUE_T4_CUSTOMSTYLE hidden = false;textColor = "#ffffff";backgroundColor = "#80ff0000";borderColor = "#ffffff";lootbeamColor = "#80ff0000";showLootbeam = true;showValue = true;
+#define VAR_VALUE_T4_CUSTOMSTYLE hidden = false;textColor = "#ffffff";backgroundColor = "#80ff0000";borderColor = "#ffffff";lootbeamColor = "#80ff0000";showLootbeam = true;showValue = true;sound = "t0.wav";
 
 /*@ define:input:item_values
 type: style
@@ -5326,7 +5324,7 @@ label: Style
 group: Insane tier
 exampleItem: Bandos tassets
 */
-#define VAR_VALUE_T3_CUSTOMSTYLE hidden = false;textColor = "#ff66b2";backgroundColor = "#80ffffff";borderColor = "#ff66b2";lootbeamColor = "#ff66b2";textAccent = 4;showLootbeam = true;showValue = true;
+#define VAR_VALUE_T3_CUSTOMSTYLE hidden = false;textColor = "#ff66b2";backgroundColor = "#ffffffff";borderColor = "#ff66b2";textAccentColor = "#ff000000";lootbeamColor = "#ff66b2";textAccent = 1;showLootbeam = true;showValue = true;sound = "t0.wav";
 
 /*@ define:input:item_values
 type: style
@@ -5334,7 +5332,7 @@ label: Style
 group: High tier
 exampleItem: Abyssal whip
 */
-#define VAR_VALUE_T2_CUSTOMSTYLE hidden = false;textColor = "#ff9600";backgroundColor = "#80ffffff";borderColor = "#ff9600";lootbeamColor = "#ff9600";textAccent = 4;showLootbeam = true;
+#define VAR_VALUE_T2_CUSTOMSTYLE hidden = false;textColor = "#ff9600";backgroundColor = "#80ffffff";borderColor = "#ff9600";textAccentColor = "#ff000000";lootbeamColor = "#ff9600";textAccent = 4;showLootbeam = true;sound = "t1.wav";
 
 /*@ define:input:item_values
 type: style
@@ -5342,7 +5340,7 @@ label: Style
 group: Medium tier
 exampleItem: Dragon pickaxe
 */
-#define VAR_VALUE_T1_CUSTOMSTYLE hidden = false;textColor = "#99ff99";borderColor = "#99ff99";lootbeamColor = "#99ff99";showLootbeam = true;
+#define VAR_VALUE_T1_CUSTOMSTYLE hidden = false;textColor = "#99ff99";borderColor = "#99ff99";textAccentColor = "#ff000000";lootbeamColor = "#99ff99";textAccent = 4;showLootbeam = true;sound = "t2.wav";
 
 /*@ define:input:item_values
 type: style
