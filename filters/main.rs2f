@@ -4962,24 +4962,24 @@ group: Tier C
 #define VAR_UNIQUE_CTIER ["dark totem top","dark totem base","dark totem middle","long bone","curved bone","looting bag","unidentified small fossil","unidentified medium fossil","unidentified large fossil","unidentified rare fossil","key master teleport","chromium ingot","blood quartz","smoke quartz","shadow quartz","ice quartz","pendant of ates*","frozen cache","ancient icon","charged ice","parasitic egg"]
 
 /*@ define:input:uniques
-type: style
-label: Style
+type: stringlist
+label: Items
 group: Skill Capes
 exampleItem: Max Cape
 */
 #define VAR_UNIQUE_SKILLCAPE ["* cape","* cape(t)"]
 
 /*@ define:input:uniques
-type: style
-label: Style
+type: stringlist
+label: Items
 group: Diary Rewards
 exampleItem: Fremennik Sea boots
 */
 #define VAR_UNIQUE_DIARY ["Ghommal's hilt*","Kandarin headgear*","Wilderness sword*","Varrock armour*","Ardougne cloak*","Morytania legs*","Rada's blessing*","Explorer's ring*","Western banner*","Falador shield*","Karamja gloves*","Desert amulet*","Fremennik Sea Boots*"]
 
 /*@ define:input:uniques
-type: style
-label: Style
+type: stringlist
+label: Items
 group: Teleports Untradable
 exampleItem: Camulet
 */
