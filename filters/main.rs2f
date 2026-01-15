@@ -1106,7 +1106,7 @@ label: 'Hide drops: Weapons and armour'
 group: Araxyte
 enum: ["Adamant longsword","Adamant battleaxe","Rune dagger","Rune med helm","Rune platelegs","Aranea boots"]
 */
-#define VAR_ARAXYTE_ENUMLIST_FILTER_WEAPONSANDARMOUR ["Adamant longsword","Adamant battleaxe"]
+#define VAR_ARAXYTE_ENUMLIST_FILTER_WEAPONSANDARMOUR ["Adamant longsword","Adamant battleaxe","Rune dagger"]
 CONST_ARAXYTE_RULE (name:VAR_ARAXYTE_ENUMLIST_FILTER_WEAPONSANDARMOUR) {
   hidden = true;
 }
