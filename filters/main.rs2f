@@ -4983,7 +4983,7 @@ label: Items
 group: Teleports Untradable
 exampleItem: Camulet
 */
-#define VAR_UNIQUE_TELEPORT ["Camulet", "Enchanted Lyre*","Skull sceptre*","*quetzal whistle"]
+#define VAR_UNIQUE_TELEPORT ["Camulet","Enchanted Lyre*","Skull sceptre*","*quetzal whistle"]
 
 /*@ define:input:uniques
 type: style
@@ -4991,7 +4991,7 @@ label: Style
 group: Tier S
 exampleItem: Executioner's axe head
 */
-#define VAR_UNIQUE_STIER_CUSTOMSTYLE hidden = false;textColor = "#ff0000";backgroundColor = "#ffffff";borderColor = "#ff0000";lootbeamColor = "#ff0000";textAccent = 4;textAccentColor = "#ff000000";showLootbeam = true;sound = "t0.wav";
+#define VAR_UNIQUE_STIER_CUSTOMSTYLE hidden = false;textColor = "#ff0000";backgroundColor = "#ffffff";borderColor = "#ff0000";textAccentColor = "#ff000000";lootbeamColor = "#ff0000";showLootbeam = true;sound = "t0.wav";
 
 /*@ define:input:uniques
 type: style
@@ -5007,7 +5007,7 @@ label: Style
 group: Tier B
 exampleItem: Araxyte head
 */
-#define VAR_UNIQUE_BTIER_CUSTOMSTYLE hidden = false;textColor = "#000000";backgroundColor = "#af6025";borderColor = "#000000";textAccent = 3;menuTextColor = "#EB8717";sound = "t2.wav";
+#define VAR_UNIQUE_BTIER_CUSTOMSTYLE hidden = false;textColor = "#000000";backgroundColor = "#af6025";borderColor = "#000000";menuTextColor = "#EB8717";textAccent = 3;sound = "t2.wav";
 
 /*@ define:input:uniques
 type: style
@@ -5359,7 +5359,7 @@ label: Style
 group: '++Insane tier'
 exampleItem: Torva platebody (damaged)
 */
-#define VAR_VALUE_T5_CUSTOMSTYLE hidden = false;textColor = "#ff0000";backgroundColor = "#ffffff";borderColor = "#ff0000";lootbeamColor = "#ff0000";textAccent = 4;showLootbeam = true;textAccentColor = "#ff000000";showValue = true;sound = "t0.wav";
+#define VAR_VALUE_T5_CUSTOMSTYLE hidden = false;textColor = "#ff0000";backgroundColor = "#ffffff";borderColor = "#ff0000";textAccentColor = "#ff000000";lootbeamColor = "#ff0000";showLootbeam = true;showValue = true;sound = "t0.wav";
 
 /*@ define:input:item_values
 type: style
@@ -5367,7 +5367,7 @@ label: Style
 group: '+Insane tier'
 exampleItem: Zaryte vambraces
 */
-#define VAR_VALUE_T4_CUSTOMSTYLE hidden = false;textColor = "#ffffff";backgroundColor = "#80ff0000";borderColor = "#ffffff";lootbeamColor = "#80ff0000";showLootbeam = true;showValue = true;textAccent = 4;textAccentColor = "#ff000000";sound = "t0.wav";
+#define VAR_VALUE_T4_CUSTOMSTYLE hidden = false;textColor = "#ffffff";backgroundColor = "#80ff0000";borderColor = "#ffffff";textAccentColor = "#ff000000";lootbeamColor = "#80ff0000";textAccent = 4;showLootbeam = true;showValue = true;sound = "t0.wav";
 
 /*@ define:input:item_values
 type: style
@@ -5375,7 +5375,7 @@ label: Style
 group: Insane tier
 exampleItem: Bandos tassets
 */
-#define VAR_VALUE_T3_CUSTOMSTYLE hidden = false;textColor = "#ff66b2";backgroundColor = "#ffffffff";borderColor = "#ff66b2";textAccentColor = "#ff000000";lootbeamColor = "#ff66b2";textAccent = 4;showLootbeam = true;showValue = true;sound = "t0.wav";
+#define VAR_VALUE_T3_CUSTOMSTYLE hidden = false;textColor = "#ff66b2";backgroundColor = "#ffffffff";borderColor = "#ff66b2";textAccentColor = "#ff000000";lootbeamColor = "#ff66b2";fontType = 1;showLootbeam = true;showValue = true;sound = "t0.wav";
 
 /*@ define:input:item_values
 type: style
