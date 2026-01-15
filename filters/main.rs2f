@@ -5358,6 +5358,7 @@ group: '++Insane tier'
 exampleItem: Torva platebody (damaged)
 */
 #define VAR_VALUE_T5_CUSTOMSTYLE hidden = false;textColor = "#ff0000";backgroundColor = "#ffffff";borderColor = "#ff0000";textAccentColor = "#ff000000";lootbeamColor = "#ff0000";showLootbeam = true;showValue = true;sound = "t0.wav";
+#define VAR_VALUE_T5_CUSTOMSTYLE_MUTE hidden = false;textColor = "#ff0000";backgroundColor = "#ffffff";borderColor = "#ff0000";textAccentColor = "#ff000000";lootbeamColor = "#ff0000";showLootbeam = true;showValue = true;
 
 /*@ define:input:item_values
 type: style
@@ -5366,6 +5367,7 @@ group: '+Insane tier'
 exampleItem: Zaryte vambraces
 */
 #define VAR_VALUE_T4_CUSTOMSTYLE hidden = false;textColor = "#ffffff";backgroundColor = "#80ff0000";borderColor = "#ffffff";textAccentColor = "#ff000000";lootbeamColor = "#80ff0000";textAccent = 4;showLootbeam = true;showValue = true;sound = "t0.wav";
+#define VAR_VALUE_T4_CUSTOMSTYLE_MUTE hidden = false;textColor = "#ffffff";backgroundColor = "#80ff0000";borderColor = "#ffffff";textAccentColor = "#ff000000";lootbeamColor = "#80ff0000";textAccent = 4;showLootbeam = true;showValue = true;
 
 /*@ define:input:item_values
 type: style
@@ -5374,6 +5376,7 @@ group: Insane tier
 exampleItem: Bandos tassets
 */
 #define VAR_VALUE_T3_CUSTOMSTYLE hidden = false;textColor = "#ff66b2";backgroundColor = "#ffffffff";borderColor = "#ff66b2";textAccentColor = "#ff000000";lootbeamColor = "#ff66b2";fontType = 1;showLootbeam = true;showValue = true;sound = "t0.wav";
+#define VAR_VALUE_T3_CUSTOMSTYLE_MUTE hidden = false;textColor = "#ff66b2";backgroundColor = "#ffffffff";borderColor = "#ff66b2";textAccentColor = "#ff000000";lootbeamColor = "#ff66b2";fontType = 1;showLootbeam = true;showValue = true;
 
 /*@ define:input:item_values
 type: style
@@ -5382,6 +5385,7 @@ group: High tier
 exampleItem: Abyssal whip
 */
 #define VAR_VALUE_T2_CUSTOMSTYLE hidden = false;textColor = "#ff9600";backgroundColor = "#80ffffff";borderColor = "#ff9600";textAccentColor = "#ff000000";lootbeamColor = "#ff9600";textAccent = 4;showLootbeam = true;sound = "t1.wav";
+#define VAR_VALUE_T2_CUSTOMSTYLE_MUTE hidden = false;textColor = "#ff9600";backgroundColor = "#80ffffff";borderColor = "#ff9600";textAccentColor = "#ff000000";lootbeamColor = "#ff9600";textAccent = 4;showLootbeam = true;
 
 /*@ define:input:item_values
 type: style
@@ -5390,6 +5394,7 @@ group: Medium tier
 exampleItem: Dragon pickaxe
 */
 #define VAR_VALUE_T1_CUSTOMSTYLE hidden = false;textColor = "#99ff99";borderColor = "#99ff99";textAccentColor = "#ff000000";lootbeamColor = "#99ff99";textAccent = 4;showLootbeam = true;sound = "t2.wav";
+#define VAR_VALUE_T1_CUSTOMSTYLE_MUTE hidden = false;textColor = "#99ff99";borderColor = "#99ff99";textAccentColor = "#ff000000";lootbeamColor = "#99ff99";textAccent = 4;showLootbeam = true;
 
 /*@ define:input:item_values
 type: style
@@ -5406,45 +5411,11 @@ label: Hide below value
 */
 #define VAR_VALUE_MINVALUE 0
 
-/*@ define:input:item_values
-type: style
-label: Style
-group: '++Insane tier'
-exampleItem: Torva platebody (damaged)
+/*@ define:input
+type: stringlist
+label: Mute items
 */
-#define VAR_VALUE_T5_CUSTOMSTYLE_MUTE hidden = false;textColor = "#ff0000";backgroundColor = "#ffffff";borderColor = "#ff0000";textAccentColor = "#ff000000";lootbeamColor = "#ff0000";showLootbeam = true;showValue = true
-
-/*@ define:input:item_values
-type: style
-label: Style
-group: '+Insane tier'
-exampleItem: Zaryte vambraces
-*/
-#define VAR_VALUE_T4_CUSTOMSTYLE_MUTE hidden = false;textColor = "#ffffff";backgroundColor = "#80ff0000";borderColor = "#ffffff";textAccentColor = "#ff000000";lootbeamColor = "#80ff0000";textAccent = 4;showLootbeam = true;showValue = true
-
-/*@ define:input:item_values
-type: style
-label: Style
-group: Insane tier
-exampleItem: Bandos tassets
-*/
-#define VAR_VALUE_T3_CUSTOMSTYLE_MUTE hidden = false;textColor = "#ff66b2";backgroundColor = "#ffffffff";borderColor = "#ff66b2";textAccentColor = "#ff000000";lootbeamColor = "#ff66b2";fontType = 1;showLootbeam = true;showValue = true
-
-/*@ define:input:item_values
-type: style
-label: Style
-group: High tier
-exampleItem: Abyssal whip
-*/
-#define VAR_VALUE_T2_CUSTOMSTYLE hidden_MUTE = false;textColor = "#ff9600";backgroundColor = "#80ffffff";borderColor = "#ff9600";textAccentColor = "#ff000000";lootbeamColor = "#ff9600";textAccent = 4;showLootbeam = true
-
-/*@ define:input:item_values
-type: style
-label: Style
-group: Medium tier
-exampleItem: Dragon pickaxe
-*/
-#define VAR_VALUE_T1_CUSTOMSTYLE hidden_MUTE = false;textColor = "#99ff99";borderColor = "#99ff99";textAccentColor = "#ff000000";lootbeamColor = "#99ff99";textAccent = 4;showLootbeam = true
+#define VAR_MUTE_ITEMS ["Mark of Grace"]
 
 /*@ define:input
 type: boolean
@@ -5452,6 +5423,12 @@ group: Minimum value
 label: "Always show untradeables"
 */
 #define VAR_VALUE_SHOWUNTRADEABLE true
+
+rule (value:>=VAR_VALUE_T5_VALUE && name:"Mark of Grace") { VAR_VALUE_T5_CUSTOMSTYLE_MUTE }
+rule (value:>=VAR_VALUE_T4_VALUE && name:VAR_MUTE_ITEMS) { VAR_VALUE_T4_CUSTOMSTYLE_MUTE }
+rule (value:>=VAR_VALUE_T3_VALUE && name:VAR_MUTE_ITEMS) { VAR_VALUE_T3_CUSTOMSTYLE_MUTE }
+rule (value:>=VAR_VALUE_T2_VALUE && name:VAR_MUTE_ITEMS) { VAR_VALUE_T2_CUSTOMSTYLE_MUTE }
+rule (value:>=VAR_VALUE_T1_VALUE && name:VAR_MUTE_ITEMS) { VAR_VALUE_T1_CUSTOMSTYLE_MUTE }
 
 rule (value:>=VAR_VALUE_T5_VALUE) { VAR_VALUE_T5_CUSTOMSTYLE }
 rule (value:>=VAR_VALUE_T4_VALUE) { VAR_VALUE_T4_CUSTOMSTYLE }
