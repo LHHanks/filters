@@ -5449,6 +5449,10 @@ rule (name:VAR_HIDDEN_ITEMS) {
   hidden = true;
 }
 
+rule (name:"coins" && value:<1000) {
+  hidden = true;
+}
+
 rule ((tradeable:true || !VAR_VALUE_SHOWUNTRADEABLE) && value:<VAR_VALUE_MINVALUE) {
   hidden = true;
 }
