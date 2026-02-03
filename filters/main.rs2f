@@ -5357,8 +5357,8 @@ label: Style
 group: '++Insane tier'
 exampleItem: Torva platebody (damaged)
 */
-#define VAR_VALUE_T5_CUSTOMSTYLE hidden = false;textColor = "#ff0000";backgroundColor = "#ffffff";borderColor = "#ff0000";textAccentColor = "#ff000000";lootbeamColor = "#ff0000";showLootbeam = true;showValue = true;sound = "t0.wav";
-#define VAR_VALUE_T5_CUSTOMSTYLE_MUTE hidden = false;textColor = "#ff0000";backgroundColor = "#ffffff";borderColor = "#ff0000";textAccentColor = "#ff000000";lootbeamColor = "#ff0000";showLootbeam = true;showValue = true;
+#define VAR_VALUE_T5_CUSTOMSTYLE hidden = false;textColor = "#ff0000";backgroundColor = "#ffffff";borderColor = "#ff0000";textAccentColor = "#ff000000";lootbeamColor = "#ff0000";showLootbeam = true;showValue = true;sound = "t0.wav";fontType=1;textAccent=3;
+#define VAR_VALUE_T5_CUSTOMSTYLE_MUTE hidden = false;textColor = "#ff0000";backgroundColor = "#ffffff";borderColor = "#ff0000";textAccentColor = "#ff000000";lootbeamColor = "#ff0000";showLootbeam = true;showValue = true;fontType=1;textAccent=3;
 
 /*@ define:input:item_values
 type: style
@@ -5366,8 +5366,8 @@ label: Style
 group: '+Insane tier'
 exampleItem: Zaryte vambraces
 */
-#define VAR_VALUE_T4_CUSTOMSTYLE hidden = false;textColor = "#ffffff";backgroundColor = "#80ff0000";borderColor = "#ffffff";textAccentColor = "#ff000000";lootbeamColor = "#80ff0000";textAccent = 4;showLootbeam = true;showValue = true;sound = "t0.wav";
-#define VAR_VALUE_T4_CUSTOMSTYLE_MUTE hidden = false;textColor = "#ffffff";backgroundColor = "#80ff0000";borderColor = "#ffffff";textAccentColor = "#ff000000";lootbeamColor = "#80ff0000";textAccent = 4;showLootbeam = true;showValue = true;
+#define VAR_VALUE_T4_CUSTOMSTYLE hidden = false;textColor = "#ffffff";backgroundColor = "#80ff0000";borderColor = "#ffffff";textAccentColor = "#ff000000";lootbeamColor = "#80ff0000";textAccent = 4;showLootbeam = true;showValue = true;sound = "t0.wav";fontType=1;textAccent=3;
+#define VAR_VALUE_T4_CUSTOMSTYLE_MUTE hidden = false;textColor = "#ffffff";backgroundColor = "#80ff0000";borderColor = "#ffffff";textAccentColor = "#ff000000";lootbeamColor = "#80ff0000";textAccent = 4;showLootbeam = true;showValue = true;fontType=1;textAccent=3;
 
 /*@ define:input:item_values
 type: style
@@ -5375,8 +5375,8 @@ label: Style
 group: Insane tier
 exampleItem: Bandos tassets
 */
-#define VAR_VALUE_T3_CUSTOMSTYLE hidden = false;textColor = "#ff66b2";backgroundColor = "#ffffffff";borderColor = "#ff66b2";textAccentColor = "#ff000000";lootbeamColor = "#ff66b2";fontType = 1;showLootbeam = true;showValue = true;sound = "t0.wav";
-#define VAR_VALUE_T3_CUSTOMSTYLE_MUTE hidden = false;textColor = "#ff66b2";backgroundColor = "#ffffffff";borderColor = "#ff66b2";textAccentColor = "#ff000000";lootbeamColor = "#ff66b2";fontType = 1;showLootbeam = true;showValue = true;
+#define VAR_VALUE_T3_CUSTOMSTYLE hidden = false;textColor = "#ff66b2";backgroundColor = "#ffffffff";borderColor = "#ff66b2";textAccentColor = "#ff000000";lootbeamColor = "#ff66b2";fontType = 1;showLootbeam = true;showValue = true;sound = "t0.wav";fontType=1;textAccent=3;
+#define VAR_VALUE_T3_CUSTOMSTYLE_MUTE hidden = false;textColor = "#ff66b2";backgroundColor = "#ffffffff";borderColor = "#ff66b2";textAccentColor = "#ff000000";lootbeamColor = "#ff66b2";fontType = 1;showLootbeam = true;showValue = true;fontType=1;textAccent=3;
 
 /*@ define:input:item_values
 type: style
