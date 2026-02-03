@@ -4991,7 +4991,7 @@ label: Style
 group: Tier S
 exampleItem: Executioner's axe head
 */
-#define VAR_UNIQUE_STIER_CUSTOMSTYLE hidden = false;textColor = "#ff0000";backgroundColor = "#ffffff";borderColor = "#ff0000";textAccentColor = "#ff000000";lootbeamColor = "#ff0000";showLootbeam = true;sound = "t0.wav";
+#define VAR_UNIQUE_STIER_CUSTOMSTYLE hidden = false;textColor = "#ff0000";backgroundColor = "#ffffff";borderColor = "#ff0000";textAccentColor = "#ff000000";lootbeamColor = "#ff0000";showLootbeam = true;sound = "t0.wav";fontType=1;textAccent=3;
 
 /*@ define:input:uniques
 type: style
