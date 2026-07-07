@@ -5412,7 +5412,7 @@ label: Style
 group: Medium tier
 exampleItem: Dragon pickaxe
 */
-#define VAR_VALUE_T1_CUSTOMSTYLE hidden = false;textColor = "#99ff99";borderColor = "#99ff99";textAccentColor = "#ff000000";lootbeamColor = "#99ff99";textAccent = 4;showLootbeam = true;sound = "";
+#define VAR_VALUE_T1_CUSTOMSTYLE hidden = false;textColor = "#99ff99";borderColor = "#99ff99";textAccentColor = "#ff000000";lootbeamColor = "#99ff99";textAccent = 4;showLootbeam = true;sound = "pkm_t3.wav";
 #define VAR_VALUE_T1_CUSTOMSTYLE_MUTE hidden = false;textColor = "#99ff99";borderColor = "#99ff99";textAccentColor = "#ff000000";lootbeamColor = "#99ff99";textAccent = 4;showLootbeam = true;
 
 /*@ define:input:item_values
